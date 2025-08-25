@@ -1,0 +1,14 @@
+vervang:
+
+const iconSpan = document.createElement('span');
+iconSpan.className = 'material-icons';
+iconSpan.textContent = fileIcons[ext] || fileIcons.default;
+
+
+
+naar:
+
+const img = document.createElement('img');
+img.src = fileIcons[ext] || fileIcons.default;
+img.className = 'file-icon';
+iconTd.appendChild(img);
