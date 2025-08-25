@@ -1,0 +1,83 @@
+    body {
+      margin: 0;
+      font-family: 'Figtree', sans-serif;
+      background-color: #fff;
+      color: #000;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      border-bottom: 1px solid #ddd;
+      background-color: #f9f9f9;
+    }
+
+    header .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    header .actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    header input[type="text"] {
+      padding: 5px 10px;
+      font-size: 0.9rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+    }
+
+    th {
+      background-color: #fafafa;
+    }
+
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    .material-icons {
+      cursor: pointer;
+    }
+
+    .file-icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      header .actions {
+        margin-top: 10px;
+        width: 100%;
+        gap: 5px;
+      }
+
+      header input[type="text"] {
+        flex: 1;
+        width: 100%;
+      }
+    }
